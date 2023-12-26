@@ -9,3 +9,15 @@ fileignoreconfig:
 - filename: package-lock.json
   checksum: 46b355f55e3710279bc600882e141077cb71be3a3a500b2a0772de965fb1d9c3
 version: ""
+
+fileignoreconfig:
+- filename: src/components/Accordion.tsx
+  checksum: 5b3551496886aa02bbf0c18bdf7d7acd848b224f119fdf1c9e1405b1b0039d8d
+version: ""
+
+fileignoreconfig:
+- filename: src/pages/accordian.tsx
+  checksum: 57d1efadad643a575eb4dedb7a094b4378e9ce9a3e734d54653a51c425772516
+- filename: src/components/Accordion.tsx
+  checksum: 64c0e4522e213223f51f4d0c98405b6e48fe95b752c71516bd86c60069b3cd7f
+version: ""
