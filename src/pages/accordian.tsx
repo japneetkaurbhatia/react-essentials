@@ -1,7 +1,7 @@
 import React from 'react'
 import Accordion from '../components/Accordion';
 
-const accordian = () => {
+const Accordian = () => {
   const accordionSections = [
     ['Section 1 Heading', 'Section 1 Content Section 1 Content Section 1 Content Section 1 Content'],
     ['Section 2 Heading', 'Section 2 Content'],
@@ -17,4 +17,4 @@ const accordian = () => {
   </div>
 }
 
-export default accordian
+export default Accordian
