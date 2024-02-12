@@ -15,6 +15,12 @@ const useStateHooks = () => {
   const resetCount = () => {
     setCount(0);
 }
+
+const incrementCountBy5 = () => {
+  for(let i = 0; i < 5; i++)
+    setCount(count => count+1);
+}
+
   return (
     <div>
         <h1>useState Example</h1>
@@ -26,6 +32,8 @@ const useStateHooks = () => {
         <button onClick={incrementCount}>click me to increment</button>
         <button onClick={resetCount}>click me to reset</button>
         <button onClick={decrementCount}>click me to decrement</button>
+        <button onClick={incrementCountBy5}>click me to increment by 5</button>
+        
     </div>
   )
 }
