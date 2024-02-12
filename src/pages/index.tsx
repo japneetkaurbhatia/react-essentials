@@ -13,6 +13,7 @@ const HomePage = () => {
       </Helmet>
       <ListOfComponents>
         <StyledButton onClick={() => router.push("/accordian")}> Accordian</StyledButton>
+        <StyledButton onClick={() => router.push("/hooks")}>Hooks</StyledButton>
       </ListOfComponents>
     </div>
   );
