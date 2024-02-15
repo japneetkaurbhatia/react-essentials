@@ -9,6 +9,8 @@ const useStateHooks = () => {
       lastName: ""
     });
 
+    const[items, setItems] = useState([]);
+
     const incrementCount = () => {
         setCount(count+1);
     }
@@ -40,6 +42,13 @@ const setLastName = (e) => {
   });
 }
 
+const appendNumberInArray = (e) => {
+  let number = (Math.random() * 10) + 1;
+  setItems([
+    ...items, Math.floor(number)
+  ])
+}
+
   return (
     <div>
         <h1>useState Example</h1>
@@ -57,7 +66,11 @@ const setLastName = (e) => {
         <input type="text" value={name.firstName} onChange={setFirstName}/>
         <input type="text" value={name.lastName} onChange={setLastName}/>
         <h3>hello {name.firstName} {name.lastName}</h3>
-       
+
+        <h2>useState Array</h2>
+        <button onClick={appendNumberInArray}>Add a number</button>
+       {items.map(i => (<li>{i}</li>))}
+        
     </div>
   )
 }
