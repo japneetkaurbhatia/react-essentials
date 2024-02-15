@@ -5,6 +5,7 @@ const useEffectHooks = () => {
     const[name, setName] = useState("");
     const[xCoor, setXCoor] = useState(0);
     const[yCoor, setYCoor] = useState(0);
+    const[display, setDisplay] = useState(true);
 
     const incrementCount = () => {
         setCount(count+1);
@@ -22,6 +23,13 @@ const useEffectHooks = () => {
         window.addEventListener("mousemove", e => logMouseCoordinates(e));
         
         document.title = `Clicked ${count} times`
+
+        
+        return () => {
+            console.log("unmount");
+            
+            window.removeEventListener("mousemove", logMouseCoordinates);
+        }
     },[count]); //[] -> runs only in initial render
 
 
@@ -44,6 +52,9 @@ const useEffectHooks = () => {
         <h2>useEffect Only Once</h2>
         <h3>Mouse Coordinates = {xCoor} : {yCoor} </h3>
 
+        <h2>useEffect UnMount Component</h2>
+        <button onClick={()=> setDisplay(display => !display)}>toggle</button>
+        {display && <h3>Mouse Coordinates = {xCoor} : {yCoor} </h3>}
         
         
     </div>
