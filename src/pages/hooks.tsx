@@ -11,6 +11,7 @@ const hooks = () => {
           <StyledButton onClick={() => router.push("/hooks/useStateHooks")}> useState </StyledButton>
           <StyledButton onClick={() => router.push("/hooks/useEffectHooks")}> useEffect </StyledButton>
           <StyledButton onClick={() => router.push("/hooks/useContextHooks")}> useContext </StyledButton>
+          <StyledButton onClick={() => router.push("/hooks/useReducerHooks")}> useReducer </StyledButton>
         </ListOfComponents>
       </div>
     );
