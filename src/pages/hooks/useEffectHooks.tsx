@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import FetchDataUsingUseEffectHooks from './components/FetchDataUsingUseEffectHooks';
 import IntervalCounterUseEffectHooks from './components/IntervalCounterUseEffectHooks';
 
 const useEffectHooks = () => {
@@ -59,7 +60,7 @@ const useEffectHooks = () => {
 
         <IntervalCounterUseEffectHooks />
         
-        
+        <FetchDataUsingUseEffectHooks />
     </div>
   )
 }
