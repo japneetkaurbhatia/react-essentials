@@ -3,6 +3,11 @@ import StyledButton from '../../components/StyledButton'
 
 const useStateHooks = () => {
     const[count, setCount] = useState(0);
+    
+    const [name, setName] = useState({
+      firstName: "",
+      lastName: ""
+    });
 
     const incrementCount = () => {
         setCount(count+1);
@@ -21,6 +26,20 @@ const incrementCountBy5 = () => {
     setCount(count => count+1);
 }
 
+const setFirstName = (e) => {
+  setName({
+    ...name,
+    firstName: e.target.value
+  });
+}
+
+const setLastName = (e) => {
+  setName({
+    ...name,
+    lastName: e.target.value
+  });
+}
+
   return (
     <div>
         <h1>useState Example</h1>
@@ -33,7 +52,12 @@ const incrementCountBy5 = () => {
         <button onClick={resetCount}>click me to reset</button>
         <button onClick={decrementCount}>click me to decrement</button>
         <button onClick={incrementCountBy5}>click me to increment by 5</button>
-        
+
+        <h2>useState Object</h2>
+        <input type="text" value={name.firstName} onChange={setFirstName}/>
+        <input type="text" value={name.lastName} onChange={setLastName}/>
+        <h3>hello {name.firstName} {name.lastName}</h3>
+       
     </div>
   )
 }
