@@ -1,5 +1,5 @@
 import React from 'react'
-import { UserContext } from '../useContextHooks'
+import { ProfileContext, UserContext } from '../useContextHooks'
 
 function UseContextComponentA() {
   return (
@@ -8,7 +8,17 @@ function UseContextComponentA() {
         <UserContext.Consumer> 
             {
                 name => {
-                    return <h3>name is {name}</h3>
+                    return (
+                        <ProfileContext.Consumer>
+                            {
+                                profile => {
+                                    return (
+                                        <h3>name is {name} and profile is {profile}</h3>
+                                    )
+                                }
+                            }
+                        </ProfileContext.Consumer>
+                    )
                 }
             }
         </UserContext.Consumer>
