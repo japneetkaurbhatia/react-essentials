@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import IntervalCounterUseEffectHooks from './components/IntervalCounterUseEffectHooks';
 
 const useEffectHooks = () => {
     const[count, setCount] = useState(0);
@@ -55,6 +56,8 @@ const useEffectHooks = () => {
         <h2>useEffect UnMount Component</h2>
         <button onClick={()=> setDisplay(display => !display)}>toggle</button>
         {display && <h3>Mouse Coordinates = {xCoor} : {yCoor} </h3>}
+
+        <IntervalCounterUseEffectHooks />
         
         
     </div>
