@@ -9,6 +9,7 @@ const hooks = () => {
       <div>
         <ListOfComponents>
           <StyledButton onClick={() => router.push("/hooks/useStateHooks")}> useState </StyledButton>
+          <StyledButton onClick={() => router.push("/hooks/useEffectHooks")}> useEffect </StyledButton>
         </ListOfComponents>
       </div>
     );
