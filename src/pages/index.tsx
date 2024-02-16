@@ -14,6 +14,7 @@ const HomePage = () => {
       <ListOfComponents>
         <StyledButton onClick={() => router.push("/accordian")}> Accordian</StyledButton>
         <StyledButton onClick={() => router.push("/hooks")}>Hooks</StyledButton>
+        <StyledButton onClick={() => router.push("/hocs")}> Higher Order Components</StyledButton>
       </ListOfComponents>
     </div>
   );
