@@ -1,18 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react';
+import withCounter from '../withCounter';
 
-function ButtonCounter() {
-    const[count, setCount] = useState(0);
+const ButtonCounter = ({ count, incrementCount, name }) => {
+  return <button onClick={incrementCount}>{name} Clicked {count} times</button>;
+};
 
-    const incrementCount = () => {
-        setCount((count) => count + 1)
-    }
-
-  return (
-    <div>
-        <h2>buttonCounter</h2>
-        <button onClick={incrementCount}>clicked {count} times</button>
-    </div>
-  )
-}
-
-export default ButtonCounter
+export default withCounter(ButtonCounter);
