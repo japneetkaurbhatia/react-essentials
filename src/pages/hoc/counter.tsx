@@ -5,8 +5,8 @@ function counter() {
   return (
     <div>
         <h1>counter</h1>
-        <ButtonCounter />
-        <MouseHoverCounter />
+        <ButtonCounter name="mnop" />
+        <MouseHoverCounter name="mnop" />
     </div>
   )
 }
