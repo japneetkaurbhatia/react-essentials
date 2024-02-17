@@ -16,6 +16,7 @@ const hooks = () => {
           <StyledButton onClick={() => router.push("/hooks/useMemoHooks")}> useMemo </StyledButton>
           <StyledButton onClick={() => router.push("/hooks/useCallbackHooks")}> useCallback </StyledButton>
           <StyledButton onClick={() => router.push("/hooks/useRefHooks")}> useRef </StyledButton>
+          <StyledButton onClick={() => router.push("/hooks/customHooks")}> customHooks </StyledButton>
         </ListOfComponents>
       </div>
     );
