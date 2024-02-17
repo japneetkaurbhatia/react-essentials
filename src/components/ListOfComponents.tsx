@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const ListOfComponents = styled.div`
   background-color: #f6cacb;
@@ -6,4 +6,4 @@ const ListOfComponents = styled.div`
   border-radius: 5px;
 `;
 
-export default ListOfComponents
+export default ListOfComponents;

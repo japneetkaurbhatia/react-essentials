@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function UseContextComponentC() {
-  return (
-    <div>useContextComponentC</div>
-  )
+  return <div>useContextComponentC</div>;
 }
 
-export default UseContextComponentC
+export default UseContextComponentC;

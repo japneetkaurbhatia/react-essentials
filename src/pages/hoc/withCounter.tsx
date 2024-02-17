@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const withCounter = (WrappedComponent) => {
   const WithCounter = (props) => {
     const [count, setCount] = useState(0);
 
     const incrementCount = () => {
-      setCount(prevCount => prevCount + 1);
+      setCount((prevCount) => prevCount + 1);
     };
 
-    console.log('HOC', props.name);
+    console.log("HOC", props.name);
 
     return (
       <WrappedComponent

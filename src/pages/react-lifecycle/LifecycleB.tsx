@@ -1,27 +1,31 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 class LifecycleB extends Component {
-    constructor(props) {
-        super(props)
+  constructor(props) {
+    super(props);
 
-        this.state = {
-            name: "mnop"
-        }
-        console.log("LifecycleB constructor");
-    }
+    this.state = {
+      name: "mnop",
+    };
+    console.log("LifecycleB constructor");
+  }
 
-    static getDerivedStateFromProps(props, state) {
-        console.log("LifecycleB getDerivedStateFromProps");
-        return null;
-    }
+  static getDerivedStateFromProps(props, state) {
+    console.log("LifecycleB getDerivedStateFromProps");
+    return null;
+  }
 
-    componentDidMount(): void {
-        console.log("LifecycleB componentDidMount");
-    }
+  componentDidMount(): void {
+    console.log("LifecycleB componentDidMount");
+  }
 
-    shouldComponentUpdate(nextProps: Readonly<{}>, nextState: Readonly<{}>, nextContext: any): boolean {
-      console.log("LifecycleB shouldComponentUpdate");
-      return true;
+  shouldComponentUpdate(
+    nextProps: Readonly<{}>,
+    nextState: Readonly<{}>,
+    nextContext: any,
+  ): boolean {
+    console.log("LifecycleB shouldComponentUpdate");
+    return true;
   }
 
   getSnapshotBeforeUpdate(prevProps: Readonly<{}>, prevState: Readonly<{}>) {
@@ -29,17 +33,19 @@ class LifecycleB extends Component {
     return null;
   }
 
-  componentDidUpdate(prevProps: Readonly<{}>, prevState: Readonly<{}>, snapshot?: any): void {
+  componentDidUpdate(
+    prevProps: Readonly<{}>,
+    prevState: Readonly<{}>,
+    snapshot?: any,
+  ): void {
     console.log("LifecycleB componentDidUpdate");
   }
 
   render() {
     console.log("LifecycleB render");
-    
-    return (
-      <h1>LifecycleB</h1>
-    )
+
+    return <h1>LifecycleB</h1>;
   }
 }
 
-export default LifecycleB
+export default LifecycleB;

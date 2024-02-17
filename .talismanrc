@@ -21,3 +21,24 @@ fileignoreconfig:
 - filename: src/components/Accordion.tsx
   checksum: 64c0e4522e213223f51f4d0c98405b6e48fe95b752c71516bd86c60069b3cd7f
 version: ""
+
+fileignoreconfig:
+- filename: package-lock.json
+  checksum: b75126ca5b9a192b4563c39d2c340f8f8d377e3134be713c7c3eda756583590e
+- filename: src/pages/hooks/components/FetchDataUsingUseEffectHooks.tsx
+  checksum: b46db34915b64e350bc76a06b580b7c8ae3041b9831890b0bf44963c832db5c2
+version: ""
+
+fileignoreconfig:
+- filename: package-lock.json
+  checksum: 047be188626cf559c33a0db25546d5af04ecb5a775b7def032906589fa19aa2d
+version: ""
+
+fileignoreconfig:
+- filename: src/components/Accordion.tsx
+  checksum: 7cd27b385846fe38cfd6bdda3817ced33bca497f91b19feeed8547a757702940
+- filename: src/pages/accordian.tsx
+  checksum: ed1bee4a39c31c6f45fd846bb2674835240bbdbe5ab2dd47db789120841e5ed7
+- filename: src/pages/hooks/components/FetchDataUsingUseEffectHooks.tsx
+  checksum: 86a032dc9204acfa758620caa6f76dac77f0fb383c55420b80527caab5ffa6b4
+version: ""

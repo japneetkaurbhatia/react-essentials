@@ -1,6 +1,6 @@
-import Image from 'next/image';
-import React, { useState, useRef } from 'react';
-import styled from 'styled-components';
+import Image from "next/image";
+import React, { useState, useRef } from "react";
+import styled from "styled-components";
 
 const downArrow = "public/assests/down-arrow.svg";
 const upArrow = "public/assests/up-arrow.svg";
@@ -24,10 +24,9 @@ const AccordionHeader = styled.div`
   align-items: center;
 `;
 
-const AccordionContent = styled.div`
-`;
+const AccordionContent = styled.div``;
 
-const Accordion = ({ title = "title", children = "children"}) => {
+const Accordion = ({ title = "title", children = "children" }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const toggleAccordion = () => {
@@ -35,7 +34,7 @@ const Accordion = ({ title = "title", children = "children"}) => {
   };
 
   const handleKeyPress = (e) => {
-    if (e.key === 'Enter' || e.key === ' ') {
+    if (e.key === "Enter" || e.key === " ") {
       toggleAccordion();
     }
   };
@@ -49,13 +48,18 @@ const Accordion = ({ title = "title", children = "children"}) => {
         onKeyPress={handleKeyPress}
       >
         {title}
-        <Image src={isExpanded ? upArrow : downArrow} alt="arrow" width="20" height="20"></Image>
+        <Image
+          src={isExpanded ? upArrow : downArrow}
+          alt="arrow"
+          width="20"
+          height="20"
+        ></Image>
       </AccordionHeader>
       <AccordionContent
         aria-hidden={!isExpanded}
         style={{
-            height: !isExpanded ? "0px" : "auto",
-            padding: !isExpanded ? "0px" : "10px",
+          height: !isExpanded ? "0px" : "auto",
+          padding: !isExpanded ? "0px" : "10px",
         }}
       >
         {children}

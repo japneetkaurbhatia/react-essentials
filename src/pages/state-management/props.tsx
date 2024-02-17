@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react";
 
-function Props({props}) {
+function Props({ props }) {
   return (
     <div>
-        <h1>Props</h1>
-        <h2>props: {props.name}</h2>
+      <h1>Props</h1>
+      <h2>props: {props.name}</h2>
     </div>
-  )
+  );
 }
 
-export default Props
+export default Props;
