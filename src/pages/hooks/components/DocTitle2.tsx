@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react'
+import useDocumentTitle from './custom/useDocumentTitle';
 
 export default function DocTitle2() {
     const [count, setCount] = useState(0);
 
-    useEffect(() => {
-        document.title= `Count: ${count}`
-    }, [count])
+    useDocumentTitle(count);
     
   return (
     <div>
