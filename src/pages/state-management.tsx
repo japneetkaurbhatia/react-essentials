@@ -8,8 +8,6 @@ const stateManagement = () => {
     return (
       <div>
         <ListOfComponents>
-          <StyledButton onClick={() => router.push("/state-management/state")}> state </StyledButton>
-          <StyledButton onClick={() => router.push("/state-management/props")}> props </StyledButton>
           <StyledButton onClick={() => router.push("/state-management/stateVsProps")}> state vs props </StyledButton>
         </ListOfComponents>
       </div>
