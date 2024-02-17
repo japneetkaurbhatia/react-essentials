@@ -15,6 +15,7 @@ const HomePage = () => {
         <StyledButton onClick={() => router.push("/accordian")}> Accordian</StyledButton>
         <StyledButton onClick={() => router.push("/hooks")}>Hooks</StyledButton>
         <StyledButton onClick={() => router.push("/hocs")}> Higher Order Components</StyledButton>
+        <StyledButton onClick={() => router.push("/react-lifecycle")}>React Lifecycle Methods of Components</StyledButton>
       </ListOfComponents>
     </div>
   );
