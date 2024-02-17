@@ -20,12 +20,33 @@ class LifecycleA extends Component {
         console.log("LifecycleA componentDidMount");
     }
 
+    shouldComponentUpdate(nextProps: Readonly<{}>, nextState: Readonly<{}>, nextContext: any): boolean {
+        console.log("LifecycleA shouldComponentUpdate");
+        return true;
+    }
+
+    getSnapshotBeforeUpdate(prevProps: Readonly<{}>, prevState: Readonly<{}>) {
+      console.log("LifecycleA getSnapshotBeforeUpdate");
+      return null;
+    }
+
+    componentDidUpdate(prevProps: Readonly<{}>, prevState: Readonly<{}>, snapshot?: any): void {
+      console.log("LifecycleA componentDidUpdate");
+    }
+
+    changeState = () => {
+      this.setState({
+        name: "qwerty"
+      })
+    }
+
   render() {
     console.log("LifecycleA render");
     
     return (
       <div>
         <h1>LifecycleA</h1>
+        <button onClick={this.changeState}>update state</button>
         <LifecycleB />
       </div>
     )
