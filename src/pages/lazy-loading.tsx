@@ -1,7 +1,13 @@
 import React, { lazy, Suspense } from 'react'
 
+// lazy-loading
 const Home = lazy(() => import('./lazy-loading/Home'))
 const About = lazy(() => import('./lazy-loading/About'))
+
+// code-splitting
+import ("./lazy-loading/math").then((result) => {
+    console.log("result", result.addNumbers(3,4));
+})
 
 function LazyLoading() {
   return (
@@ -17,6 +23,9 @@ function LazyLoading() {
         </div>}>
             <About />
         </Suspense>
+        
+        <h1>Code Splitting</h1>
+
     </div>
   )
 }

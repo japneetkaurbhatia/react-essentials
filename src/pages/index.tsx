@@ -29,7 +29,7 @@ const HomePage = () => {
           State Management{" "}
         </StyledButton>
         <StyledButton onClick={() => router.push("/lazy-loading")}>
-          Lazy Loading
+          Lazy Loading and Code Splitting
         </StyledButton>
       </ListOfComponents>
     </div>
