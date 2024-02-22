@@ -3,6 +3,11 @@ import { useRouter } from "next/router";
 import { Helmet } from "react-helmet";
 import StyledButton from "../components/StyledButton";
 import ListOfComponents from "../components/ListOfComponents";
+import store from "./redux/store";
+
+store.subscribe(() => {
+  console.log(store.getState());
+})
 
 const HomePage = () => {
   const router = useRouter();
@@ -30,6 +35,9 @@ const HomePage = () => {
         </StyledButton>
         <StyledButton onClick={() => router.push("/lazy-loading")}>
           Lazy Loading and Code Splitting
+        </StyledButton>
+        <StyledButton onClick={() => router.push("/redux")}>
+          Redux
         </StyledButton>
       </ListOfComponents>
     </div>
