@@ -39,6 +39,9 @@ const HomePage = () => {
         <StyledButton onClick={() => router.push("/redux")}>
           Redux
         </StyledButton>
+        <StyledButton onClick={() => router.push("/own-react")}>
+          Build Your Own React
+        </StyledButton>
       </ListOfComponents>
     </div>
   );
