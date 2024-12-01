@@ -42,6 +42,10 @@ const HomePage = () => {
         <StyledButton onClick={() => router.push("/own-react")}>
           Build Your Own React
         </StyledButton>
+        <StyledButton onClick={() => router.push("/carousel")}>
+          React responsive carousel
+        </StyledButton>
+        
       </ListOfComponents>
     </div>
   );
